@@ -4,9 +4,10 @@ Welcome to the Language Learning Flashcard App! This simple React app helps user
 
 ## Objectives
 
-1. **Create Basic Styles for the App:**
+1. **Create Basic Styles and Navbar for the App:**
    - [ ] Implement basic styling to enhance the visual appeal of the app.
    - [ ] Consider using colors, fonts, or other CSS styles to make the app more engaging.
+   - [ ] Creative a navbar and add links
 
 2. **Hide Flashcard List by Default:**
    - [ ] Modify the app so that the flashcard list is hidden by default when the user first opens the app.
