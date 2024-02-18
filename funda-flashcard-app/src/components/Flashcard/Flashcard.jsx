@@ -1,4 +1,4 @@
-import styles from '../App.module.css';
+import styles from './Flashcard.module.css';
 
 const Flashcard = ({ card }) => {
     return (

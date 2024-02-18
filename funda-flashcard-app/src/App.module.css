@@ -1,36 +1,9 @@
+body {
+    font-family: "Plus Jakarta Sans";
+}
+
+
 .app {
     
 }
 
-.flashcard {
-    width: 200px;
-    height: 120px;
-    border: 1px solid #ccc;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
-
-.flashcard:hover {
-    background-color: #f0f0f0;
-}
-
-.front,
-.back {
-    padding: 10px;
-}
-
-.flashcardlist {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.quiz {
-    text-align: center;
-    margin-top: 20px;
-}
-  

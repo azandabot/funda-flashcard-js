@@ -1,5 +1,5 @@
 import Flashcard from "./Flashcard";
-import styles from '../App.module.css';
+import styles from './Flashcard.module.css';
 
 const FlashcardList = ({ flashcards }) => {
     return (

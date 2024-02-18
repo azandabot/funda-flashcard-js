@@ -1,6 +1,9 @@
 import { useState } from 'react';
-import FlashcardList from './components/FlashcardList';
-import Quiz from './components/Quiz';
+
+import FlashcardList from './components/Flashcard/FlashcardList';
+import Quiz from './components/Flashcard/Quiz';
+import Navbar from './components/Navbar/Navbar'
+
 import styles from'./App.module.css';
 
 const App = () => {
@@ -11,7 +14,8 @@ const App = () => {
   
     return (
       <div className={styles.app}>
-        <h1>Language Learning Flashcards</h1>
+        <Navbar />
+        
         <FlashcardList flashcards={flashcards} />
         <Quiz flashcards={flashcards} />
       </div>

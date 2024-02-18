@@ -1,0 +1,26 @@
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+.navbarbrand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #999;
+}
+  
+.navbarnav {
+    list-style: none;
+    display: flex;
+}
+  
+.navitem {
+    margin-right: 1rem;
+    cursor: pointer;
+}
+  
+.navitem:hover {
+    text-decoration: underline;
+}
+  

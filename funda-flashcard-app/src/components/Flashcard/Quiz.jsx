@@ -1,5 +1,5 @@
 import FlashcardList from "./FlashcardList";
-import styles from '../App.module.css';
+import styles from './Flashcard.module.css';
 import { useState } from "react"; 
 
 const Quiz = ({ flashcards }) => {
