@@ -1,3 +1,7 @@
+.app {
+    
+}
+
 .flashcard {
     width: 200px;
     height: 120px;
@@ -19,7 +23,7 @@
     padding: 10px;
 }
 
-.flashcard-list {
+.flashcardlist {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

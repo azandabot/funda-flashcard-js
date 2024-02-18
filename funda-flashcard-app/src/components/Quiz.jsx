@@ -1,4 +1,5 @@
 import FlashcardList from "./FlashcardList";
+import styles from '../App.module.css';
 import { useState } from "react"; 
 
 const Quiz = ({ flashcards }) => {
@@ -9,9 +10,9 @@ const Quiz = ({ flashcards }) => {
     }
 
     return (
-        <div className="quiz">
+        <div className={styles.quiz}>
           <FlashcardList flashcards={[flashcards[currentIndex]]} />
-          <button onClick={NextCardHandler}>Next Card</button>
+          <button className={styles.btnNextCard} onClick={NextCardHandler}>Next Card</button>
         </div>
     );
 }
