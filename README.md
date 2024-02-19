@@ -10,9 +10,9 @@ Welcome to the Language Learning Flashcard App! This simple React app helps user
    - [x] Creative a navbar and add links
 
 2. **Hide Flashcard List by Default:**
-   - [ ] Modify the app so that the flashcard list is hidden by default when the user first opens the app.
-   - [ ] Add a button or toggle functionality to reveal the flashcard list when desired.
-   - [ ] OnClick of flashcard should show the translation
+   - [x] Modify the app so that the flashcard list is hidden by default when the user first opens the app.
+   - [x] Add a button or toggle functionality to reveal the flashcard list when desired.
+   - [x] OnClick of flashcard should show the translation
 
 3. **Create Flashcard Form:**
    - [ ] Implement a form component to allow users to create new flashcards.

@@ -65,3 +65,7 @@
     background-color: #e07c00;
 }
   
+.pagination {
+    font-weight: lighter;
+    font-size: small;
+}

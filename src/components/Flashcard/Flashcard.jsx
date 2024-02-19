@@ -1,12 +1,24 @@
+import { useState } from 'react';
 import styles from './Flashcard.module.css';
 
 const Flashcard = ({ card }) => {
-    return (
-        <div className={styles.flashcard}>
-          <div className={styles.front}><b>{card.word}</b></div>
-          <div className={styles.back}><i>{card.translation}</i></div>
-        </div>
-      );
-}
+  const [view, setView] = useState('front');
 
-export default Flashcard
+  const changeViewHandler = () => {
+    setView(view === 'front' ? 'back' : 'front');
+  };
+
+  return (
+    <div className={styles.flashcard} onClick={changeViewHandler}>
+      <div className={view === 'front' ? styles.front : styles.back}>
+        <b>{card.word}</b>
+      </div>
+      <div className={view === 'back' ? styles.front : styles.back}>
+        <i>{card.translation}</i>
+      </div>
+      <div className={styles.pagination}>{card.id}</div>
+    </div>
+  );
+};
+
+export default Flashcard;

@@ -11,12 +11,19 @@ const App = () => {
       { id: 1, word: 'Hello', translation: 'Sawubona' },
       { id: 2, word: 'Goodbye', translation: 'Bhabhayi' },
     ]);
+
+    // handle nav item clicks
+    const NavItemClickHandler = (option) => {
+      setViewFlashCards(option === 'list' || option === 'both')
+    }
+
+    const [viewFlashCards, setViewFlashCards] = useState(false)
   
     return (
       <div className={styles.app}>
-        <Navbar />
+        <Navbar onNavItemClick={NavItemClickHandler} />
         
-        <FlashcardList flashcards={flashcards} />
+        { viewFlashCards && <FlashcardList flashcards={flashcards} /> }
         <Quiz flashcards={flashcards} />
       </div>
     );
